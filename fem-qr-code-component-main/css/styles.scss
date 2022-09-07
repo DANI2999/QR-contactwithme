@@ -1,0 +1,74 @@
+/* Standardises all elements */
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/** QR Code Box Styles **/
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: hsl(220, 15%, 55%);
+}
+
+#root { 
+    background: hsl(212, 45%, 89%); 
+    max-width: 100%;
+    min-width: 375px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    margin: 0 auto;
+    position: relative;
+}
+
+article {
+    width: 320px;
+    background: #fff;
+    padding: 16px;
+    margin: 0 0 10px;
+    text-align: center;
+    border-radius: 18px;
+    min-height: 495px;
+
+    img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    h1 {
+        margin: 16px 0;
+        font-size: 22px;
+        color: hsl(218, 44%, 22%);
+    }
+
+    p {
+        font-size: 15px;
+        padding: 0 12px;
+    }
+}
+
+/* Attribution */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}
